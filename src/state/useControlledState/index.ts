@@ -56,6 +56,7 @@ export default function useControlledState<T, R = T>(
     }
 
     if (value === undefined) {
+      // @ts-ignore
       setInnerValue(value);
     }
   }, [value]);
